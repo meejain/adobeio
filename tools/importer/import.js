@@ -514,6 +514,14 @@ const createMetadata = (main, document, params) => {
       }
     });
   }
+
+//   function addBackDrop(document) {
+//     document.querySelectorAll('div.backdrop').forEach((x) => {
+//         const newThing = document.createElement('p');
+//         newThing.innerText = 'Hey Meet How are you';
+//         x.replaceWith(newThing);
+//     });
+//   }
   
   function customImportLogic(doc) {
     removeCookiesBanner(doc);
@@ -533,6 +541,7 @@ const createMetadata = (main, document, params) => {
     convertBackgroundImgsToForegroundImgs(doc);
     changeNewsSocial(doc);
     addNewsBanner(doc);
+    // addBackDrop(doc);
   }
   
   export default {
